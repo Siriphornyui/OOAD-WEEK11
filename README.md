@@ -133,3 +133,37 @@ endif
 @enduml
 ```
 <img src= "https://github.com/Siriphornyui/OOAD-WEEK11/blob/master/online.png">
+
+```
+@startuml
+
+(*) --> "
+Across the street"
+if "Checking light" then
+-->[Green] "walk"
+-->"light"
+    else
+  ->[Red] "stop"
+-->"light"
+  ->[End] (*)
+endif
+@enduml
+```
+<img src= "https://github.com/Siriphornyui/OOAD-WEEK11/blob/master/NOv12i9034NtEKN8IeLUGIeYxjsAYzAcdQ5ZAfE8r-yltPbDmdyly5kFhiRtNOWEfoCtpPc5BdrTt3cIiaTL3Q4yiboJzdEsYKkUKiZ6ZV3nlCEn5yklAxDiYUm6CKQBAmve3nqWUIoVFmdiPc1eG6f37gd5GgaL.png">
+
+```
+@startuml
+title Login
+(*) --> "Login"
+if "Checking member" then
+  -->[member] "Login e-mail"
+    else
+  ->[No member] "Register"
+  -->"Login e-mail"
+  -->Password
+  ->[End] (*)
+endif
+@enduml
+```
+
+<img src= "https://github.com/Siriphornyui/OOAD-WEEK11/blob/master/14141.png">
